@@ -11,7 +11,7 @@ This repository contains the framework and data presented in I Can Show You the 
   - The signal dates in both the summary file and the individual country/pair files were used to create the figures in Appendix B of our paper. 
 
 # Setup
-Create a python virtual environment and activate it:
+After cloning the repository setup a python virtual environment within the project directory:
 ```
 python3 -m venv my_env
 source my_env/bin/activate
