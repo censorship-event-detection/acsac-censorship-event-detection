@@ -1,2 +1,2 @@
 # Results directory
-Run /framework/framework.py to generate the result files
+Run [framework.py](/framework) to generate the result files
