@@ -203,7 +203,6 @@ for i in range(len(datasets)):
 
         df_signal_dates = calculate_signal_dates(df_signals, country, d)
 
-        print(country + " " + d)
         df_final = pd.concat([df_final, df_signal_dates], ignore_index=True)
 
 print("Finished")
