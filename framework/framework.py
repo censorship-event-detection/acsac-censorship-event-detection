@@ -200,6 +200,7 @@ for d in datasets:
 
         df_signal_dates = calculate_signal_dates(df_signals, country, d)
 
-        print(c + " " + d)
+        print(country + " " + d)
         df_final = pd.concat([df_final, df_signal_dates], ignore_index=True)
+print("Results availables in /results directory")
 df_final.to_csv('../results/all_signal_dates.csv')
