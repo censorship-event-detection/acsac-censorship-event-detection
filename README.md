@@ -10,8 +10,8 @@ This repository contains the framework and data presented in I Can Show You the 
 - An implementation of our framework applied to all of the datasets used in our paper ([framework.py](/framework)). The framework outputs the results in ([results](/results)) as a single summary file containing all the dates of the signals found (all_signal_dates.csv) as well as individual files for each country/dataset pair with details on the same signals (e.g., cn-ooni.csv).
   - The signal dates in both the summary file and the individual country/pair files were used to create the figures in Appendix B of our paper. 
 
-# Dependency
-python3.9
+# Requirement
+Python3.9
 
 # Setup
 After cloning the repository setup a python virtual environment within the project directory:
