@@ -13,7 +13,7 @@ This repository contains the framework and data presented in I Can Show You the 
 # Setup
 After cloning the repository setup a python virtual environment within the project directory:
 ```
-python3 -m venv my_env
+python3.9 -m venv my_env
 source my_env/bin/activate
 ```
 Install required python libraries:
