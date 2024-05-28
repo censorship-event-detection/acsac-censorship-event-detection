@@ -13,15 +13,15 @@ This repository contains the framework and data presented in I Can Show You the 
 # Setup
 Create a python virtual environment and activate it:
 ```
-python -m venv my_env
+python3 -m venv my_env
 source my_env/bin/activate
 ```
 Install required python libraries:
 ```
-pip -r install requirements.txt
+pip install -r requirements.txt
 ```
 # Running the framework
-- `framework.ipynb` can be executed as is within a Jupyter notebook environment. It will run on OONI China data. To run the notebook on a new dataset edit the variables `path_to_dataset`, `typ`, `version`, and `index` to fit the new dataset.
+- `framework.ipynb` can be executed as is within a Jupyter notebook environment (launch environment by running `jupyter notebook`). It will run on OONI China data. To run the notebook on a new dataset edit the variables `path_to_dataset`, `typ`, `version`, and `index` to fit the new dataset.
 
 - To execute `framework.py`:
 ```
