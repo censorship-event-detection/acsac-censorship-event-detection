@@ -158,11 +158,14 @@ def calculate_signal_dates(df_sig, c, dataset):
     return df_sig_dates
 
 datasets = ['http', 'https','satellite', 'ooni', 'tor', 'gfwatch']
+dataset_names = ['Hyperquack HTTP', 'Hyperquack HTTPS', 'Satellite', 'OONI', 'Tor', 'GFWatch']
 index = 'date'
 
 df_final = pd.DataFrame(columns=['Signal Start', 'Signal End', 'Type', 'Country', 'Dataset'])
 
-for d in datasets:
+for i in range(len(datasets)):
+    print("Processing " + dataset_names[i])
+    d = datasets[i]
 
     countries = ['cn', 'ir', 'mm', 'pk', 'ru', 'tr']
     if d == 'ooni':
@@ -202,5 +205,7 @@ for d in datasets:
 
         print(country + " " + d)
         df_final = pd.concat([df_final, df_signal_dates], ignore_index=True)
-print("Results availables in /results directory")
+
+print("Finished")
+print("Result files available in the /results directory")
 df_final.to_csv('../results/all_signal_dates.csv')
