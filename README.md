@@ -1,14 +1,15 @@
 # censorship-event-detection
 
-This repository contains the framework and data presented in I Can Show You the World (of Censorship): Extracting Insights from Censorship Measurement Data Using Statistical Techniques.
+This repository contains the framework and data presented in I Can Show You the World (of Censorship): Extracting Insights from Censorship Measurement Data Using Statistical Techniques. Our framework consists of two statistical techniques, the Mann-Kendall trend detection test (MK) and control charts and it identifies periods of change within censorship measurement data corresponding to potential censorship events. 
 
 # Repository contents:
+- An implementation of our framework as a Jupyter notebook ([framework.ipynb](/framework)). The notebook can be edited to run on any censorship measurement or network measurement dataset. 
+- An implementation of our framework applied to all of the datasets used in our paper ([framework.py](/framework)). The framework outputs the results in ([results](/results)) as a single summary file containing all the dates of the signals found (all_signal_dates.csv) as well as individual files for each country/dataset pair with details on the same signals (e.g., cn-ooni.csv).
+  - The signal dates in both the summary file and the individual country/pair files were used to create the figures in Appendix B of our paper.
 - The data used in our paper ([data](/data))
   - We implemented our framework on data from Censored Planet's Satellite, Hyperquack HTTP, and HTTPS as well as OONI, GFWatch, and Tor. We used data from six countries - Russia, Myanmmar, China, Iran, Türkiye, and Pakistan - from January 2021 through March 2023.
-- An implementation of our framework as a Jupyter notebook ([framework.ipynb](/framework)). The notebook can be edited to run on any censorship measurement or network measurement dataset.
-  - Our framework consists of two statistical techniques, the Mann-Kendall trend detection test (MK) and control charts. After performing the MK and control chart calculations, the Jupyter notebook outputs the dates of the signals found by the framework. 
-- An implementation of our framework applied to all of the datasets used in our paper ([framework.py](/framework)). The framework outputs the results in ([results](/results)) as a single summary file containing all the dates of the signals found (all_signal_dates.csv) as well as individual files for each country/dataset pair with details on the same signals (e.g., cn-ooni.csv).
-  - The signal dates in both the summary file and the individual country/pair files were used to create the figures in Appendix B of our paper. 
+  - For details of the processed data available in this repository see the README in the data folder.
+  - The raw data for our work can be downloaded from ([Censored Planet](https://censoredplanet.org)), ([OONI](https://ooni.org)), ([GFWatch](https://gfwatch.org)), and ([Tor](https://metrics.torproject.org/userstats-relay-country.html)) 
 
 # Requirement
 Python3.9
@@ -32,4 +33,3 @@ cd framework
 python3 framework.py
 ```
 - The results will be output to csv files and stored in `/results`
-
