@@ -16,8 +16,8 @@ Run [framework.py](/framework) to generate the result files which include a sing
     - Same signals that are in the all_signal_dates.csv file but with additional information
     - Start Date: Date the signal started
     - End Date: Date the signal ended
-    - MK Signal: Indicates if a Mann-Kendall signal is present. Either increasing, decreasing or no trend
-    - Control Limit Signal: Indicates if the control chart limits have been calculated and if a signal is present. Above limits or below limits indicates a signal. Within limits indicates no signal. Waiting means that the control chart limits have not been calculated because there have not yet been enough data points to create a baseline. 
+    - MK Signal: Indicates if a Mann-Kendall signal is present `increasing`, `decreasing` or `no trend`
+    - Control Limit Signal: Indicates if the control chart limits have been calculated and if a signal is present. `above limits` or `below limits` indicates a signal. `Within limits` indicates no signal, and `Waiting` means that the control chart limits have not been calculated because there have not yet been enough data points to create a baseline. 
     - Current Mean: Value of the current control chart mean
     - Current UCL: Value of the current control chart upper control limit
     - Current LCL: Value of the current control chart lower control limit
