@@ -4,8 +4,7 @@ This repository contains the framework and data presented in I Can Show You the 
 
 # Repository contents:
 - An implementation of our framework as a Jupyter notebook ([framework.ipynb](/framework)). The notebook can be edited to run on any censorship measurement or network measurement dataset. 
-- An implementation of our framework applied to all of the datasets used in our paper ([framework.py](/framework)). The framework outputs the results in ([results](/results)) as a single summary file containing all the dates of the signals found (all_signal_dates.csv) as well as individual files for each country/dataset pair with details on the same signals (e.g., cn-ooni.csv).
-  - The signal dates in both the summary file and the individual country/pair files were used to create the figures in Appendix B of our paper.
+- An implementation of our framework applied to all of the datasets used in our paper ([framework.py](/framework)). The framework outputs the results in ([results](/results))
 - The data used in our paper ([data](/data))
   - We implemented our framework on data from Censored Planet's Satellite, Hyperquack HTTP, and HTTPS as well as OONI, GFWatch, and Tor. We used data from six countries - Russia, Myanmmar, China, Iran, Türkiye, and Pakistan - from January 2021 through March 2023.
   - For details of the processed data available in this repository see the README in the data folder.
@@ -32,4 +31,4 @@ pip install -r requirements.txt -I
 cd framework
 python3 framework.py
 ```
-- The results will be output to csv files and stored in `/results`
+- The results will be output to csv files and stored in `/results`. For further information see the README in `/results`

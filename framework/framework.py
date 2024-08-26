@@ -166,6 +166,7 @@ df_final = pd.DataFrame(columns=['Signal Start', 'Signal End', 'Type', 'Country'
 for i in range(len(datasets)):
     print("Processing " + dataset_names[i])
     d = datasets[i]
+    directory = d
 
     countries = ['cn', 'ir', 'mm', 'pk', 'ru', 'tr']
     if d == 'ooni':
@@ -180,11 +181,12 @@ for i in range(len(datasets)):
         version = 'count'
         countries = ['cn']
     else:
+        directory = 'censoredplanet/' + d
         typ = 'ratio'
         version = 'ratio'
 
     for country in countries:
-        path_to_dataset = '../data/' + d + '/' + d + '-data-' + country + '.csv'
+        path_to_dataset = '../data/' + directory + '/' + d + '-data-' + country + '.csv'
         df = pd.read_csv(path_to_dataset, index_col=0)
         df = df.set_index(df[index])
         df = df.sort_index()

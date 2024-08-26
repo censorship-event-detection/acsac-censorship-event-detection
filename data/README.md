@@ -4,7 +4,7 @@
     - columns:
         - date: day measurements were collected
         - count: number of censored domains per day
-- ([censored planet](/censored planet))
+- ([censored planet](/censoredplanet))
     - http: Hyperquack HTTP data in files by country
         - http-data-<country code>.csv
     - https: Hyperquack HTTPS data in files by country
