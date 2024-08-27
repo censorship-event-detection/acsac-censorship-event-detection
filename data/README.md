@@ -1,10 +1,10 @@
 # data folder contents:
-- ([gfwatch](/gfwatch))
+- ([gfwatch](/data/gfwatch))
     - gfwatch-data-cn.csv: All GFWatch data
     - columns:
         - date: day measurements were collected
         - count: number of censored domains
-- ([censored planet](/censoredplanet))
+- ([censoredplanet](/data/censoredplanet))
     - http: Hyperquack HTTP data for each country
         - http-data-\<country code>.csv
     - https: Hyperquack HTTPS data for each country
@@ -18,7 +18,7 @@
         - error (in the satellite files): Count of invalid measurements
         - anomalies: Count of valid measurements that experienced interference
         - ratio: anomalies/measurements
-- ([ooni](/ooni)): OONI data for each country
+- ([ooni](/data/ooni)): OONI data for each country
     - ooni-data-\<country code>.csv
     - columns:
         - ok: Count of valid measurements that did not experience any interference
