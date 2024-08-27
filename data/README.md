@@ -6,11 +6,11 @@
         - count: number of censored domains
 - ([censored planet](/censoredplanet))
     - http: Hyperquack HTTP data for each country
-        - http-data-<country code>.csv
+        - http-data-\<country code>.csv
     - https: Hyperquack HTTPS data for each country
-        - https-data-<country code>.csv
+        - https-data-\<country code>.csv
     - satellite: Satellite data for each country
-        - satellite-data-<country code>.csv
+        - satellite-data-\<country code>.csv
     - columns:
         - date: day measurements were collected
         - measurements: Count of all valid measurements
@@ -19,7 +19,7 @@
         - anomalies: Count of valid measurements that experienced interference
         - ratio: anomalies/measurements
 - ([ooni](/ooni)): OONI data for each country
-    - ooni-data-<country code>.csv
+    - ooni-data-\<country code>.csv
     - columns:
         - ok: Count of valid measurements that did not experience any interference
         - dns: Count of measurements that experienced interference at the DNS level
