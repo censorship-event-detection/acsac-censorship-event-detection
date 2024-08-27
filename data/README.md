@@ -3,28 +3,28 @@
     - gfwatch-data-cn.csv: All GFWatch data
     - columns:
         - date: day measurements were collected
-        - count: number of censored domains per day
+        - count: number of censored domains
 - ([censored planet](/censoredplanet))
-    - http: Hyperquack HTTP data in files by country
+    - http: Hyperquack HTTP data for each country
         - http-data-<country code>.csv
-    - https: Hyperquack HTTPS data in files by country
+    - https: Hyperquack HTTPS data for each country
         - https-data-<country code>.csv
-    - satellite: Satellite data in files by country
+    - satellite: Satellite data for each country
         - satellite-data-<country code>.csv
     - columns:
         - date: day measurements were collected
         - measurements: Count of all valid measurements
-        - ok (http/https): Count of valid measurements that did not experience any interference
-        - error (satellite): Count of invalid measurements
+        - ok (in the http/https files): Count of valid measurements that did not experience any interference
+        - error (in the satellite files): Count of invalid measurements
         - anomalies: Count of valid measurements that experienced interference
         - ratio: anomalies/measurements
-- ([ooni](/ooni)): OONI data in files by country
+- ([ooni](/ooni)): OONI data for each country
     - ooni-data-<country code>.csv
     - columns:
-        - ok: Count of successful measurements that did not experience any interference
+        - ok: Count of valid measurements that did not experience any interference
         - dns: Count of measurements that experienced interference at the DNS level
         - http: Count of measurements that experienced interference at the HTTP level
         - tls: Count of measurements that experienced interference at the TLS level
         - error: Count of invalid measurements
         - date: day measurements were collected
-        - total: Count of all measurements valid measurements
+        - total: Count of all valid measurements
