@@ -1,3 +1,5 @@
+The raw data for our work can be requested or downloaded from ([Censored Planet](https://censoredplanet.org)), ([OONI](https://ooni.org)), ([GFWatch](https://gfwatch.org)), and ([Tor](https://metrics.torproject.org/userstats-relay-country.html)). The raw OONI data was processed using the source code and manual steps outlined in this ([ooni tutorial](https://ooni.org/notebooks/tutorial-russia-data-analysis-case-study.html)). The Tor and GFWatch data does not require further processing
+
 # data folder contents:
 - ([gfwatch](/data/gfwatch))
     - gfwatch-data-cn.csv: All GFWatch data
