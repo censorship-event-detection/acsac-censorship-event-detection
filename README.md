@@ -24,7 +24,7 @@ Install required python libraries:
 ```
 pip install -r requirements.txt -I
 ```
-# Running the framework
+# Running the Framework
 - `Framework.ipynb` can be executed as is within a Jupyter notebook environment (launch environment by running `jupyter notebook`). It will run on OONI China data. To run the notebook on a new dataset edit the variables `path_to_dataset`, `typ`, `version`, and `index` to fit the new dataset.
 
 - To execute `framework.py`:
