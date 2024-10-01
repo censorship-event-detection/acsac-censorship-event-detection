@@ -88,9 +88,6 @@ def calculate_cc(mk_df, data_type, c, dataset):
             #If there are 20 points in a row, new limits can be calculated
             if no_trend_count == 20:
                 mean, ucl, lcl = calculate_limits(df_control_limit_points, data_type)
-                #print(mean)
-                #print(ucl)
-                #print(lcl)
                 cc = 'New limits'
                 calculate_new_limits = False
                 no_trend_count = 0
