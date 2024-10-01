@@ -14,7 +14,7 @@ Censored Planet data was provided to us directly from the Censored Planet team w
     Columns:
     date: day measurements were collected
     count: number of censored domains
-
+    ```
 - [censoredplanet](/data/censoredplanet)
     - http: Hyperquack HTTP data for each country
         - http-data-\<country code>.csv
@@ -30,6 +30,7 @@ Censored Planet data was provided to us directly from the Censored Planet team w
   error (in the satellite files): Count of invalid measurements
   anomalies: Count of valid measurements that experienced interference
   ratio: anomalies/measurements
+  ```
 - [ooni](/data/ooni): OONI data for each country
     - ooni-data-\<country code>.csv
     ```
@@ -41,5 +42,5 @@ Censored Planet data was provided to us directly from the Censored Planet team w
     error: Count of invalid measurements
     date: day measurements were collected
     total: Count of all valid measurements
-
+    ```
 Country Codes: CN = China, IR = Iran, MM = Myanmar, PK = Pakistan, TR = Türkiye, RU = Russia
