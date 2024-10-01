@@ -14,11 +14,11 @@ interference. The OONI data in our work includes counts of the measurements with
 tutorial can be found [here](https://ooni.org/notebooks/tutorial-russia-data-analysis-case-study.html).
 
 Censored Planet data was provided to us directly from the Censored Planet team whose contact information is available on their 
-[website](https://censoredplanet.org). When we received the data, the Hyperquack HTTP and Hyperquack HTTPS measurements had already been labeled 
-by the [Censored Planet Data Analysis Pipeline](https://github.com/censoredplanet/censoredplanet-analysis/tree/master), but the 
-Satellite measurements still required processing. We labeled the Satellite measurements using 
-[source code](https://github.com/censoredplanet/censoredplanet-analysis/blob/master/table/queries/merged_reduced_scans.sql) Censored Planet developed 
-for the pipeline but had not yet implemented. Censored Planet's pipeline labels a measurement with `expected` if the measurement was 
+[website](https://censoredplanet.org). When we received the data, the Hyperquack HTTP and Hyperquack HTTPS measurements had already been labeled by the 
+[Censored Planet Data Analysis Pipeline](https://github.com/censoredplanet/censoredplanet-analysis/blob/e08900790b4cbcb3a2234d0c2cd2bf87db98e9e1), 
+but the Satellite measurements still required processing. We labeled the Satellite measurements using 
+[source code](https://github.com/censoredplanet/censoredplanet-analysis/blob/26b9759f8758048fa572dadc964834bc571bd7a5/table/queries/derived_satellite_scans.sql) 
+Censored Planet developed for the pipeline but had not yet implemented. Censored Planet's pipeline labels a measurement with `expected` if the measurement was 
 valid and no interference was detected. If the measurement was invalid, its labeled as `error`, and the measurements that were valid but 
 experienced interference (refered to as "anomalies" in our paper) were labeled based on what type of interference was present. The 
 Censored Planet data in our work is the ratio of anomalies to total measurements per day. 
